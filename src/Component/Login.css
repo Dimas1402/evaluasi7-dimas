@@ -1,0 +1,136 @@
+.div{
+    width:400px;
+    height:30%;
+    margin: 10% 32% 0 32%;
+    background:rgba(20,30,40,0.6);
+    padding:50px 0 0 0 ;
+    border:25px double ivory;
+    border-top-color:transparent;
+    animation:3s blink ease-in-out infinite;
+    border-bottom-color:transparent;
+    box-sizing:padding-box;
+    position:absolute;
+    border-radius:28%;
+    box-shadow:0px 60px 200px -40px #000;
+}
+
+.input{
+    margin:0px 50px;
+padding:5px 15px;
+height:30px;
+width:250px;
+display:block;
+color:#fff;
+font-size:1.2em;
+position:relative;
+box-sizing:padding-box;
+background:transparent;
+border:none;
+border-bottom:5px double #fff;
+outline:none;
+}
+
+.button{
+    margin:0 110px;
+    margin-top: 30px;
+width:150px;
+height:35px;
+padding:5px; 
+background:springgreen;
+border:1px solid #000;
+border-radius:10px;
+box-shadow:0px 10px 20px -8px springgreen;
+}
+.button:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  background: #677207;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+/*****************************/
+@keyframes blink {
+20% ,30% {
+        border:25px double ivory;
+         border-top-color:transparent;
+          border-bottom-color:transparent;
+        }
+50%,70%{
+       border:25px double springgreen;
+         border-top-color:transparent;
+          border-bottom-color:transparent;
+
+}
+80%,90%,100%{
+          border:25px double #000;
+         border-top-color:transparent;
+          border-bottom-color:transparent;
+
+}		
+
+}
+
+
+.div:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  /*****************************/
+  @keyframes blink {
+  20% ,30% {
+          border:25px double ivory;
+           border-top-color:transparent;
+            border-bottom-color:transparent;
+          }
+  50%,70%{
+         border:25px double springgreen;
+           border-top-color:transparent;
+            border-bottom-color:transparent;
+  
+  }
+  80%,90%,100%{
+            border:25px double #000;
+           border-top-color:transparent;
+            border-bottom-color:transparent;
+  
+  }		
+  
+  }
