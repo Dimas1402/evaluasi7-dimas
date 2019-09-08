@@ -75,7 +75,15 @@ class Login extends Component {
     if (localStorage.getItem("token")) {
       return <Redirect to="/home" logOut={this.signOut} />;
     } else if (isLoading) {
-      return <h1>Loading...</h1>;
+      return (
+        <div class="frame">
+          <div class="center">
+            <div class="dot-1"></div>
+            <div class="dot-2"></div>
+            <div class="dot-3"></div>
+          </div>
+        </div>
+      );
     }
     return (
       <div className="div">
